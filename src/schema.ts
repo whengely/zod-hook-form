@@ -26,3 +26,16 @@ export const org: OrganizationSchema = {
   type: 'Organization',
   organizationName: 'org name'
 }
+
+export const eitherPerson: FormSchema = { 
+  type: 'Person',
+  firstName: 'first',
+  lastName: 'last',
+  // errors organizationName: 'blah',
+}
+
+export const eitherOrg: FormSchema = { 
+  type: 'Organization',
+  // errors firstName: 'first',
+  organizationName: 'blah',
+}
